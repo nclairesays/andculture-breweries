@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Brewery from '../presentational/Brewery';
-// import { api } from '../constants'
+import { api } from '../constants'
 
 export default class ListOfBreweries extends Component {
 	state = {
@@ -9,7 +9,7 @@ export default class ListOfBreweries extends Component {
 
 	componentDidMount() {
 		//cities in database: Portland, Asheville, Bend, and Boulder
-		fetch(`/breweries?by_city=bend`)
+		fetch(`${api}/breweries?by_city=bend`)
 		.then(res => res.json())
 		.then(breweries => this.setState({ breweries }));
 	}
