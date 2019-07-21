@@ -1,0 +1,2 @@
+backend: bundle exec rails server --port 3000
+frontend: yarn --cwd client start --port 3001
