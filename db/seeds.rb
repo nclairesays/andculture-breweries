@@ -8,7 +8,7 @@ Brewery.destroy_all
         street: Faker::Address.street_address,
         city:  'Portland',
         state: 'Maine',
-        postal_code: Faker::Address.zip_code.split.slice(0,5).join,
+        postal_code: Faker::Address.zip_code.split('-')[0],
         website: "www.#{Faker::Beer.name.split.first}.com"
     )
 end
@@ -20,7 +20,7 @@ end
         street: Faker::Address.street_address,
         city:  'Asheville',
         state: 'North Carolina',
-        postal_code: Faker::Address.zip_code.split.slice(0,5).join,
+        postal_code: Faker::Address.zip_code.split('-')[0],
         website: "www.#{Faker::Beer.brand.split.first}.com"
     )
 end
@@ -32,7 +32,7 @@ end
         street: Faker::Address.street_address,
         city:  'Bend',
         state: 'Oregon',
-        postal_code: Faker::Address.zip_code.split.slice(0,5).join,
+        postal_code: Faker::Address.zip_code.split('-')[0],
         website: "www.#{Faker::Beer.name.split.first}.com"
     )
 end
@@ -44,7 +44,7 @@ end
         street: Faker::Address.street_address,
         city:  'Boulder',
         state: 'Colorado',
-        postal_code: Faker::Address.zip_code.split.slice(0,5).join,
+        postal_code: Faker::Address.zip_code.split('-')[0],
         website: "www.#{Faker::Beer.name.split.first}.com"
     )
 end
