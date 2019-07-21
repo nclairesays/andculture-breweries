@@ -1,13 +1,14 @@
 {
     "name": "andculture-breweries",
+    "version": "0.1.0",
     "engines": {
         "node": "10.15.3",
         "npm": "6.10.1"
     },
     "scripts": {
-        "build": "yarn --cwd client install && yarn --cwd client build",
+        "build": "cd client && yarn install && yarn build && cd ..",
         "deploy": "cp -a client/build/. public/",
-        "heroku-postbuild": "yarn build && yarn deploy"
+        "postinstall": "yarn run build && yarn run deploy && echo 'Client has been built!'"
     },
     "dependencies": {
         "yarn": "^1.17.3"

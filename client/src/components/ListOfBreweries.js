@@ -9,7 +9,7 @@ export default class ListOfBreweries extends Component {
 
 	componentDidMount() {
 		//cities in database: Portland, Asheville, Bend, and Boulder
-		fetch(`/breweries?by_city=boulder`)
+		fetch(`/breweries?by_city=portland`)
 		.then(res => res.json())
 		.then(breweries => this.setState({ breweries }));
 	}
