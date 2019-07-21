@@ -1,1 +1,1 @@
-web: bundle exec rails s && cd client && npm start
+web: bundle exec puma -C config/puma.rb
