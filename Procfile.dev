@@ -1,5 +1,2 @@
-backend: bundle exec rails server --port 3001
-frontend: yarn --cwd client start --port 3000
-
-web: cd client && PORT=3000 npm start
-api: PORT=3001 && bundle exec rails s
+backend: bundle exec rails server --port 3000
+frontend: yarn --cwd client start --port 3001
