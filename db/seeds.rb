@@ -24,7 +24,7 @@ end
         website: "www.#{Faker::Beer.brand.split.first}.com"
     )
 end
-
+ 
 16.times do 
     Brewery.create(
         name: "#{Faker::Beer.brand.split.first} #{Faker::Beer.hop} Brewery",
