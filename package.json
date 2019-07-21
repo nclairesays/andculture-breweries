@@ -6,6 +6,7 @@
         "npm": "6.10.1"
     },
     "scripts": {
+        "start": "rails server",
         "heroku-postbuild": "cd client && npm install && npm run build"
     },
     "dependencies": {
